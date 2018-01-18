@@ -18,4 +18,5 @@
 @property (nonatomic, weak) id<ESQRCodeScanViewDelegate> delegate;
 - (id)initWithFrame:(CGRect)frame config:(ESQRCodeScanConfig *)config;
 - (void)startScan;
+- (void)stopScan;
 @end

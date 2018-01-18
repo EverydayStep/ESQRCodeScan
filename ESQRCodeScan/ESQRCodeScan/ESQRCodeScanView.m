@@ -26,7 +26,7 @@
 - (id)initWithFrame:(CGRect)frame config:(ESQRCodeScanConfig *)config {
     self = [super initWithFrame:frame];
     if (self) {
-        self.config = config;
+        self.config = config ? : [[ESQRCodeScanConfig alloc] init];
         [self loadUI];
         [self layout];
     }
